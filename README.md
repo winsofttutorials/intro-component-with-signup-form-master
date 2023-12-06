@@ -60,28 +60,45 @@ Approach designing the structure before going into implementing its functionalit
 - [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
+I used this project to get my head working again on form input validation, HTML and CSS component structuring.
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="formframe">
+  <form>
+    <div>
+      <input type="text" placeholder="First Name" id="fsname" />
+      <p id="fname"></p>
+    </div>
+    <div>
+      <input type="text" placeholder="Last Name" id="lsname" />
+      <p id="lname"></p>
+    </div>
+    <div>
+      <input type="email" placeholder="Email Address" id="mails" />
+    </div>
+  </form>
+</div>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+.formframe {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+// function validate() {
+//         if (
+//           !email.value.match(/^[A-za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/) &&
+//           !firstname.value.match(/^[A-za-z\._\-0-9]*[A-Za-z]*[a-z]$/) &&
+//           !lastname.value.match(/^[A-za-z\._\-0-9]*[A-Za-z]*[a-z]$/) &&
+//           !password.value.match(/^[A-za-z\._\-0-9]*[@][A-Za-z]*[a-z]{2,6}$/)
+//         ) {
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
@@ -100,7 +117,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Website - [](https://www.your-site.com)
 - Frontend Mentor - [@winsofttutorials]
 - Twitter - [@IFIDIKUROEPHOD]
-  **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
