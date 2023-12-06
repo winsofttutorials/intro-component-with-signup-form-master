@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /* ### Primary */
+
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+
+  /* ### Accent */
+
+  --Blue: hsl(248, 32%, 49%);
+
+  /* ### Neutral */
+
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: url(./images/bg-intro-desktop.png) center;
+  background-color: var(--Red);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cardFrame {
+  width: 800px;
+  height: 100%;
+  /* background-color: white; */
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  padding: 30px;
+}
+
+.left h1 {
+  margin-top: 20%;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.left p {
+  font-size: 12px;
+  color: #fefefe;
+  font-weight: 400;
+  margin-top: 15px;
+  line-height: 20px;
+}
+
+.right {
+  flex: 1;
+}
+
+.top {
+  width: 100%;
+  background-color: var(--Blue);
+  color: var(--Grayish-Blue);
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.top span {
+  color: #fff;
+  font-weight: 600;
+}
+
+.formframe {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
+.right form {
+  position: relative;
+  margin-top: 10px;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.right form div {
+  margin-bottom: 10px;
+}
+
+.right form input {
+  width: 100%;
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid var(--Blue);
+  outline: none;
+  border-radius: 4px;
+}
+
+.right form input:focus {
+  outline: 1px solid var(--Blue);
+}
+
+.right .btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--Green);
+  color: #fff;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.right .terms {
+  font-size: 10px;
+  margin-top: 15px;
+  color: var(--Grayish-Blue);
+}
+
+.right form p span {
+  color: var(--Red);
+  font-weight: 600;
+}
+
+#fname,
+#lname,
+#mail,
+#pword {
+  text-align: right;
+  font-size: 10px;
+  color: var(--Red);
+  margin-bottom: 3px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    background: url(./images/bg-intro-mobile.png) center;
+    background-color: var(--Red);
+    background-size: cover;
+  }
+  .cardFrame {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left h1 {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .left p {
+    font-size: 12px;
+    color: #fefefe;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+}
