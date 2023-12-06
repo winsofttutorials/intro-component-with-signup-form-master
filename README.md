@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./design/Desktopview.jpeg)
+![./design/Desktopview.jpeg](./design/Desktopview.jpeg)
 ![](./design/ErrorState.jpeg)
 ![](./design/Mobileview.jpeg)
 
